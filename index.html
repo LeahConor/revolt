@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revolt Services</title>
+
+<style>
+@font-face{
+font-family:GS;
+src:url("GoogleSans-Regular (1).ttf")
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;min-height:100%}
+
+body{
+min-height:100vh;
+overflow:hidden;
+color:white;
+font-family:GS,Arial,sans-serif;
+background:#0a0a0b
+}
+
+.logo29818v019{
+position:fixed;
+z-index:20;
+left:50%;
+top:50%;
+width:280px;height:280px;
+object-fit:contain;
+opacity:0;
+transform:translate(-50%,-50%) scale(.82);
+filter:drop-shadow(0 0 0 rgba(255,30,30,0));
+animation:a92 .8s cubic-bezier(.16,1,.3,1) forwards,g771 .65s ease .4s forwards,move009 1.05s cubic-bezier(.76,0,.24,1) 1.15s forwards
+}
+
+@keyframes a92{
+from{opacity:0;transform:translate(-50%,-50%) scale(.82)}
+to{opacity:1;transform:translate(-50%,-50%) scale(1)}
+}
+
+@keyframes g771{
+to{filter:drop-shadow(0 0 15px rgba(255,35,35,.42)) drop-shadow(0 0 36px rgba(170,0,0,.18))}
+}
+
+@keyframes move009{
+0%{left:50%;top:50%;width:280px;height:280px;transform:translate(-50%,-50%)}
+100%{
+left:34px;top:28px;
+width:42px;height:42px;
+transform:translate(0)
+}
+}
+
+
+.bar881x{
+position:relative;z-index:10;
+width:100%;height:98px;
+padding:0 34px;
+display:flex;align-items:center;
+border-bottom:1px solid transparent;
+background:rgba(71,0,0,0);
+animation:xnav .55s ease 3.5s forwards
+}
+
+    @keyframes xnav{
+to{
+border-bottom-color:rgba(255,255,255,.07);
+background:rgba(71,0,0,.16)
+}
+}
+
+.txt009v{
+margin-left:57px;
+    font-size:16px;
+font-weight:600;
+white-space:nowrap;
+color:rgba(255,255,255,.94)
+}
+
+.cur718{
+display:inline-block;
+width:1px;height:16px;
+margin-left:2px;
+vertical-align:-2px;
+background:rgba(255,255,255,.8);
+opacity:0;
+    animation:curon .01s linear 2.3s forwards,curflash .7s step-end 2.3s infinite
+}
+
+@keyframes curon{to{opacity:1}}
+@keyframes curflash{50%{opacity:0}}
+
+
+.main551x{
+position:relative;
+z-index:2;
+padding:clamp(90px,13vh,155px) clamp(38px,8vw,125px);
+opacity:0;
+transform:translateY(18px);
+animation:pop551 .85s cubic-bezier(.16,1,.3,1) 3.85s forwards
+}
+
+    .main551x h1{
+max-width:1100px;
+color:#f4f4f4;
+font-size:clamp(58px,7vw,100px);
+line-height:1.08;
+letter-spacing:-.025em;
+font-weight:600
+}
+
+@keyframes pop551{
+to{opacity:1;transform:translateY(0)}
+}
+
+
+.bx991{
+display:flex;align-items:center;
+gap:14px;
+margin-top:44px;
+opacity:0;
+transform:translateY(15px);
+animation:bxin .7s cubic-bezier(.16,1,.3,1) 4.55s forwards
+}
+
+    @keyframes bxin{
+to{opacity:1;transform:translateY(0)}
+}
+
+    .b2981{
+--ang:90deg;
+--show:0;
+position:relative;
+isolation:isolate;
+min-width:190px;
+min-height:62px;
+padding:0 31px;
+border:0;
+border-radius:999px;
+background:transparent;
+color:#111;
+font-family:GS,Arial,sans-serif;
+font-size:18px;
+    font-weight:600;
+letter-spacing:-.03em;
+text-decoration:none;
+    cursor:pointer;
+display:inline-flex;
+align-items:center;justify-content:center;
+overflow:visible
+}
+
+.b2981:before{
+content:"";
+position:absolute;
+inset:0;
+padding:2px;
+border-radius:inherit;
+z-index:0;
+    background:conic-gradient(from var(--ang),#ff3737 0deg,#ff3737 70deg,#8d0000 130deg,#ff7777 205deg,#fff 275deg,#ff3737 360deg);
+opacity:var(--show);
+
+-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+-webkit-mask-composite:xor;
+mask-composite:exclude
+}
+
+.b2981:after{
+content:"";
+position:absolute;
+inset:-15px;
+border-radius:inherit;
+z-index:-1;
+background:conic-gradient(from var(--ang),rgba(255,45,45,.36),rgba(255,45,45,.30) 75deg,rgba(120,0,0,.18) 135deg,rgba(255,100,100,.20) 215deg,rgba(255,255,255,.20) 285deg,rgba(255,45,45,.36) 360deg);
+opacity:calc(var(--show) * .72);
+filter:blur(18px)
+}
+
+.in991{
+position:absolute;inset:2px;
+z-index:1;
+border-radius:999px;
+background:#f4f4f4
+}
+
+    .edge110{
+position:absolute;
+inset:0;z-index:3;
+border-radius:inherit;
+border:1px solid rgba(255,255,255,.15);
+opacity:calc(1 - var(--show));
+    pointer-events:none
+}
+
+.btntxt18{position:relative;z-index:4}
+
+.login912{color:#000000}
+.login912 .in991{background:#8e1016}
+.login912 .edge110{border-color:rgba(255,95,95,.25)}
+
+.signup100 .in991{
+background:#f4f4f4
+}
+
+
+@media(max-width:600px){
+.logo29818v019{
+width:210px;height:210px;
+animation:a92 .8s cubic-bezier(.16,1,.3,1) forwards,g771 .65s ease .4s forwards,mobmov .95s cubic-bezier(.76,0,.24,1) 1.15s forwards
+}
+
+@keyframes mobmov{
+0%{left:50%;top:50%;width:210px;height:210px;transform:translate(-50%,-50%)}
+100%{left:20px;top:27px;width:38px;height:38px;transform:translate(0)}
+}
+
+.bar881x{height:92px;padding:0 20px}
+.txt009v{margin-left:51px;font-size:14px}
+
+.main551x{
+padding:72px 20px
+}
+
+.main551x h1{font-size:(50px,15vw,70px)}
+
+.bx991{
+width:100%;
+max-width:390px;
+flex-direction:column;
+align-items:stretch;
+gap:11px;
+margin-top:34px
+}
+
+.b2981{width:100%;min-width:0;min-height:59px}
+}
+</style>
+</head>
+
+<body>
+
+        <img src="Group 3.svg" class="logo29818v019" alt="Revolt">
+
+<nav class="bar881x">
+<div class="txt009v"><span id="t98"></span><span id="c19" class="cur718"></span></div>
+            </nav>
+
+<main class="main551x">
+    <h1>Everything you need.</h1>
+
+<div class="bx991">
+<a href="/login" class="b2981 login912">
+<span class="in991"></span>
+<span class="edge110"></span><span class="btntxt18">Login</span>
+</a>
+
+<a href="/signup" class="b2981 signup100">
+<span class="in991"></span>
+<span class="edge110"></span>
+<span class="btntxt18">Sign up</span></a>
+</div>
+    </main>
+
+
+<script>
+const a="Revolt Services"
+const b=document.getElementById("t98"),c=document.getElementById("c19")
+
+setTimeout(()=>{
+let x=0
+let t=setInterval(()=>{
+b.textContent+=a[x++]
+
+if(x>=a.length){
+clearInterval(t)
+setTimeout(()=>{
+c.style.animation="none"
+c.style.opacity=0
+},400)
+}
+},58)
+},2300)
+
+
+document.querySelectorAll(".b2981").forEach(el=>{
+let s={tx:50,ty:50,ta:90,ts:0,x:50,y:50,a:90,show:0,run:false}
+
+const norm=n=>((n%360)+360)%360
+const delta=(a,b)=>((b-a+540)%360)-180
+
+function frame(){
+s.x+=(s.tx-s.x)*.18
+s.y+=(s.ty-s.y)*.18
+
+s.a=norm(s.a+delta(s.a,s.ta)*.16)
+s.show+=(s.ts-s.show)*.16
+
+el.style.setProperty("--ang",s.a+"deg")
+el.style.setProperty("--show",s.show.toFixed(3))
+
+    if(Math.abs(s.tx-s.x)>.04||Math.abs(s.ty-s.y)>.04||Math.abs(delta(s.a,s.ta))>.04||Math.abs(s.ts-s.show)>.004){
+requestAnimationFrame(frame)
+}else s.run=false
+}
+
+    function go(){
+if(s.run)return
+s.run=true
+requestAnimationFrame(frame)
+}
+
+            function mv(e){
+let r=el.getBoundingClientRect()
+let x=e.clientX-r.left,y=e.clientY-r.top
+
+    s.tx=Math.max(0,Math.min(100,x/r.width*100))
+s.ty=Math.max(0,Math.min(100,y/r.height*100))
+
+s.ta=norm(Math.atan2(y-r.height/2,x-r.width/2)*180/Math.PI+90)
+s.ts=1
+go()
+}
+
+    el.addEventListener("pointerenter",mv)
+el.addEventListener("pointermove",mv)
+
+el.addEventListener("pointerleave",()=>{
+    s.ts=0
+go()
+})
+})
+</script>
+
+</body>
+</html>
